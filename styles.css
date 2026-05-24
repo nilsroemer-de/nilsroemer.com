@@ -70,6 +70,7 @@ body {
   gap: 1.2rem;
   margin-top: 1rem;
   align-items: center;
+  justify-content: center;
 }
 
 .social-links a {
