@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://Nilsthehustlertoast.github.io/my-test-course/index.html</loc>
-    <lastmod>2026-03-14T21:40:33.469Z</lastmod>
+    <loc>https://Nilsthehustlertoast.github.io/nilsroemer.com/cv.html</loc>
+    <lastmod>2026-05-24T20:46:35.489Z</lastmod>
   </url>
   <url>
-    <loc>https://Nilsthehustlertoast.github.io/my-test-course/about.html</loc>
-    <lastmod>2026-03-14T20:31:12.414Z</lastmod>
+    <loc>https://Nilsthehustlertoast.github.io/nilsroemer.com/kontext.html</loc>
+    <lastmod>2026-05-22T20:56:30.677Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Nilsthehustlertoast.github.io/nilsroemer.com/index.html</loc>
+    <lastmod>2026-05-24T20:45:38.410Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Nilsthehustlertoast.github.io/nilsroemer.com/about.html</loc>
+    <lastmod>2026-05-22T20:40:16.430Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Nilsthehustlertoast.github.io/nilsroemer.com/lectures.html</loc>
+    <lastmod>2026-05-24T20:46:36.859Z</lastmod>
   </url>
 </urlset>

@@ -1,52 +1,94 @@
 [
   {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "CV",
+    "section": "",
+    "text": "This page is under construction."
+  },
+  {
+    "objectID": "kontext.html",
+    "href": "kontext.html",
+    "title": "Projektkontext",
+    "section": "",
+    "text": "Persönliche Website von Dr. Nils Roemer unter nilsroemer.com. Die Seite dient als zentrale Anlaufstelle für seine Lehrtätigkeit. Von der Startseite aus gelangt man zu einem Lehrbereich, der modular wächst: Kurse, Workshops und andere Lehrveranstaltungen werden nach und nach ergänzt, jeweils mit eigenen Unterlagen, Materialien und Inhalten.\nDer erste Kurs ist noch nicht final festgelegt. Die technische Struktur wird so aufgebaut, dass Kurse einfach ergänzt werden können.\n\n\n\n\nStartseite: Kurzvorstellung von Nils Roemer\nLehre: Übersichtsseite mit allen Kursen und Workshops\n\nKurse und Workshops folgen modular\n\n\n\n\n\nhttps://nilsroemer.com\n\n\n\nhttps://github.com/Nilsthehustlertoast/my-test-course\n\n\n\n/Users/nils/Projekte/my-test-course\n\n\n\n\nQuarto 1.9.37 für die Website\nGitHub Pages für Hosting\nCustom Domain nilsroemer.com via Strato (A-Record auf GitHub Pages IP)\nClaude Code als Editor und KI-Assistent\nGit für Versionskontrolle\n\n\n\n\n\nÄnderungen in Claude Code vornehmen\ngit add .\ngit commit -m \"Beschreibung\"\ngit push\nquarto publish gh-pages\n\n\n\n\n\nStartseite (index.qmd) vorhanden aber noch auf einen alten Kurs ausgerichtet, muss zur persönlichen Startseite umgebaut werden\nDomain nilsroemer.com eingerichtet und mit GitHub Pages verbunden\nLehrbereich und Kursseiten fehlen noch\n\n\n\n\n\nStartseite zu persönlicher Vorstellungsseite umbauen\nLehrbereich anlegen mit Übersichtsseite\nErsten Kurs als Unterseite einbinden wenn Kursinhalt feststeht"
+  },
+  {
+    "objectID": "kontext.html#projekt",
+    "href": "kontext.html#projekt",
+    "title": "Projektkontext",
+    "section": "",
+    "text": "Persönliche Website von Dr. Nils Roemer unter nilsroemer.com. Die Seite dient als zentrale Anlaufstelle für seine Lehrtätigkeit. Von der Startseite aus gelangt man zu einem Lehrbereich, der modular wächst: Kurse, Workshops und andere Lehrveranstaltungen werden nach und nach ergänzt, jeweils mit eigenen Unterlagen, Materialien und Inhalten.\nDer erste Kurs ist noch nicht final festgelegt. Die technische Struktur wird so aufgebaut, dass Kurse einfach ergänzt werden können."
+  },
+  {
+    "objectID": "kontext.html#struktur-geplant",
+    "href": "kontext.html#struktur-geplant",
+    "title": "Projektkontext",
+    "section": "",
+    "text": "Startseite: Kurzvorstellung von Nils Roemer\nLehre: Übersichtsseite mit allen Kursen und Workshops\n\nKurse und Workshops folgen modular"
+  },
+  {
+    "objectID": "kontext.html#live-url",
+    "href": "kontext.html#live-url",
+    "title": "Projektkontext",
+    "section": "",
+    "text": "https://nilsroemer.com"
+  },
+  {
+    "objectID": "kontext.html#github-repository",
+    "href": "kontext.html#github-repository",
+    "title": "Projektkontext",
+    "section": "",
+    "text": "https://github.com/Nilsthehustlertoast/my-test-course"
+  },
+  {
+    "objectID": "kontext.html#lokaler-pfad-mac",
+    "href": "kontext.html#lokaler-pfad-mac",
+    "title": "Projektkontext",
+    "section": "",
+    "text": "/Users/nils/Projekte/my-test-course"
+  },
+  {
+    "objectID": "kontext.html#tech-stack",
+    "href": "kontext.html#tech-stack",
+    "title": "Projektkontext",
+    "section": "",
+    "text": "Quarto 1.9.37 für die Website\nGitHub Pages für Hosting\nCustom Domain nilsroemer.com via Strato (A-Record auf GitHub Pages IP)\nClaude Code als Editor und KI-Assistent\nGit für Versionskontrolle"
+  },
+  {
+    "objectID": "kontext.html#workflow",
+    "href": "kontext.html#workflow",
+    "title": "Projektkontext",
+    "section": "",
+    "text": "Änderungen in Claude Code vornehmen\ngit add .\ngit commit -m \"Beschreibung\"\ngit push\nquarto publish gh-pages"
+  },
+  {
+    "objectID": "kontext.html#aktueller-stand",
+    "href": "kontext.html#aktueller-stand",
+    "title": "Projektkontext",
+    "section": "",
+    "text": "Startseite (index.qmd) vorhanden aber noch auf einen alten Kurs ausgerichtet, muss zur persönlichen Startseite umgebaut werden\nDomain nilsroemer.com eingerichtet und mit GitHub Pages verbunden\nLehrbereich und Kursseiten fehlen noch"
+  },
+  {
+    "objectID": "kontext.html#nächste-schritte",
+    "href": "kontext.html#nächste-schritte",
+    "title": "Projektkontext",
+    "section": "",
+    "text": "Startseite zu persönlicher Vorstellungsseite umbauen\nLehrbereich anlegen mit Übersichtsseite\nErsten Kurs als Unterseite einbinden wenn Kursinhalt feststeht"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Von der Idee zum Unternehmen",
+    "title": "Nils Roemer",
     "section": "",
-    "text": "In diesem Kurs widmen wir uns genau dieser Frage. Du startest ohne Programmierkenntnisse, arbeitest dich in Python und die Grundlagen der Unternehmensgründung ein, baust mit KI-Tools und Low-Code-Plattformen einen Software-Prototyp und hast am Ende ein funktionsfähiges MVP plus einen fundierten Business Case mit Pitch in der Hand."
+    "text": "Photo © Xenia Bluhm\n\n\n\n\n\nI am a researcher, entrepreneur, and lecturer based in Hamburg, Germany.\nI hold a degree in Business Administration with a focus on Operations and Supply Chain Management (2018) and a PhD in Operations Research and Mathematical Optimization (2022). Since 2023, I am Co-Founder and Managing Director of Planningio GmbH, a Hamburg-based software and consulting company specializing in mathematical optimization.\nOur projects span automated production planning for the beverage industry, crowd management, warehouse simulation, and industrial digitalization.\nI teach to inspire students to think analytically and to bring quantitative methods to life through real-world applications.\nLinkedIn · nils.roemer@planningio.com"
   },
   {
-    "objectID": "index.html#wie-wird-aus-einer-digitalen-idee-ein-echtes-produkt",
-    "href": "index.html#wie-wird-aus-einer-digitalen-idee-ein-echtes-produkt",
-    "title": "Von der Idee zum Unternehmen",
+    "objectID": "index.html#dr.-nils-roemer",
+    "href": "index.html#dr.-nils-roemer",
+    "title": "Nils Roemer",
     "section": "",
-    "text": "In diesem Kurs widmen wir uns genau dieser Frage. Du startest ohne Programmierkenntnisse, arbeitest dich in Python und die Grundlagen der Unternehmensgründung ein, baust mit KI-Tools und Low-Code-Plattformen einen Software-Prototyp und hast am Ende ein funktionsfähiges MVP plus einen fundierten Business Case mit Pitch in der Hand."
-  },
-  {
-    "objectID": "index.html#was-dich-erwartet",
-    "href": "index.html#was-dich-erwartet",
-    "title": "Von der Idee zum Unternehmen",
-    "section": "Was dich erwartet",
-    "text": "Was dich erwartet\nDu lernst Python-Grundlagen über interaktive Übungen und steigst direkt ins Prototyping mit KI-Tools und Low-Code-Plattformen ein. Dabei lernst du, KI gezielt einzusetzen, sowohl beim Programmieren als auch beim Strukturieren von Geschäftsideen. Du identifizierst Marktchancen, formulierst Wertversprechen und erarbeitest Geschäftsmodelle. Das Ganze mündet in einem Pitch vor Publikum."
-  },
-  {
-    "objectID": "index.html#kursstruktur",
-    "href": "index.html#kursstruktur",
-    "title": "Von der Idee zum Unternehmen",
-    "section": "Kursstruktur",
-    "text": "Kursstruktur\nDer Kurs läuft über fünf Blocktage mit Selbststudium und Projektarbeit dazwischen:\n\nTag 1 – Einführung in Python\nTag 2 – KI-gestütztes Prototyping\nTag 3 – Grundlagen Entrepreneurship\nTag 4 – Wrap-up und betreutes Prototyping\nTag 5 – Abschlusspräsentationen"
-  },
-  {
-    "objectID": "index.html#prüfungsleistung",
-    "href": "index.html#prüfungsleistung",
-    "title": "Von der Idee zum Unternehmen",
-    "section": "Prüfungsleistung",
-    "text": "Prüfungsleistung\nBewertet werden Prototyp, Business Case und Präsentation deines Teams."
-  },
-  {
-    "objectID": "index.html#wer-kann-teilnehmen",
-    "href": "index.html#wer-kann-teilnehmen",
-    "title": "Von der Idee zum Unternehmen",
-    "section": "Wer kann teilnehmen?",
-    "text": "Wer kann teilnehmen?\nOffen für alle Bachelor-Studierenden der Universität Hamburg, TUHH und Leuphana, unabhängig vom Studienhintergrund. Keine Programmierkenntnisse erforderlich."
-  },
-  {
-    "objectID": "index.html#dozierende",
-    "href": "index.html#dozierende",
-    "title": "Von der Idee zum Unternehmen",
-    "section": "Dozierende",
-    "text": "Dozierende\nDr. Nils Roemer – Co-Founder, Planningio GmbH\nDr. Tobias Vlćek – Founder, BeyondSimulations GmbH & Universität Hamburg"
+    "text": "I am a researcher, entrepreneur, and lecturer based in Hamburg, Germany.\nI hold a degree in Business Administration with a focus on Operations and Supply Chain Management (2018) and a PhD in Operations Research and Mathematical Optimization (2022). Since 2023, I am Co-Founder and Managing Director of Planningio GmbH, a Hamburg-based software and consulting company specializing in mathematical optimization.\nOur projects span automated production planning for the beverage industry, crowd management, warehouse simulation, and industrial digitalization.\nI teach to inspire students to think analytically and to bring quantitative methods to life through real-world applications.\nLinkedIn · nils.roemer@planningio.com"
   },
   {
     "objectID": "about.html",
@@ -54,5 +96,12 @@
     "title": "About",
     "section": "",
     "text": "About this site"
+  },
+  {
+    "objectID": "lectures.html",
+    "href": "lectures.html",
+    "title": "Lectures",
+    "section": "",
+    "text": "This page is under construction."
   }
 ]
