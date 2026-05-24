@@ -1,35 +1,30 @@
 ---
-title: "Von der Idee zum Unternehmen"
-subtitle: "KI-gestütztes Prototyping & Entrepreneurship"
+title: ""
 ---
 
-## Wie wird aus einer digitalen Idee ein echtes Produkt?
+:::: {.columns}
 
-In diesem Kurs widmen wir uns genau dieser Frage. Du startest ohne Programmierkenntnisse, arbeitest dich in Python und die Grundlagen der Unternehmensgründung ein, baust mit KI-Tools und Low-Code-Plattformen einen Software-Prototyp und hast am Ende ein funktionsfähiges MVP plus einen fundierten Business Case mit Pitch in der Hand.
+::: {.column width="35%"}
+![](nils-roemer.jpg){width=100% style="border-radius: 8px;"}
 
-## Was dich erwartet
+<small>Photo © Xenia Bluhm</small>
+:::
 
-Du lernst Python-Grundlagen über interaktive Übungen und steigst direkt ins Prototyping mit KI-Tools und Low-Code-Plattformen ein. Dabei lernst du, KI gezielt einzusetzen, sowohl beim Programmieren als auch beim Strukturieren von Geschäftsideen. Du identifizierst Marktchancen, formulierst Wertversprechen und erarbeitest Geschäftsmodelle. Das Ganze mündet in einem Pitch vor Publikum.
+::: {.column width="5%"}
+:::
 
-## Kursstruktur
+::: {.column width="60%"}
+## Dr. Nils Roemer
 
-Der Kurs läuft über fünf Blocktage mit Selbststudium und Projektarbeit dazwischen:
+I am a researcher, entrepreneur, and lecturer based in Hamburg, Germany.
 
-- **Tag 1** – Einführung in Python
-- **Tag 2** – KI-gestütztes Prototyping
-- **Tag 3** – Grundlagen Entrepreneurship
-- **Tag 4** – Wrap-up und betreutes Prototyping
-- **Tag 5** – Abschlusspräsentationen
+I hold a degree in Business Administration with a focus on Operations and Supply Chain Management (2018) and a PhD in Operations Research and Mathematical Optimization (2022). Since 2023, I am Co-Founder and Managing Director of [Planningio GmbH](https://planningio.com), a Hamburg-based software and consulting company specializing in mathematical optimization.
 
-## Prüfungsleistung
+Our projects span automated production planning for the beverage industry, crowd management, warehouse simulation, and industrial digitalization.
 
-Bewertet werden Prototyp, Business Case und Präsentation deines Teams.
+*I teach to inspire students to think analytically and to bring quantitative methods to life through real-world applications.*
 
-## Wer kann teilnehmen?
+[LinkedIn](https://www.linkedin.com/in/nroemer/) · [nils.roemer@planningio.com](mailto:nils.roemer@planningio.com)
+:::
 
-Offen für alle Bachelor-Studierenden der Universität Hamburg, TUHH und Leuphana, unabhängig vom Studienhintergrund. Keine Programmierkenntnisse erforderlich.
-
-## Dozierende
-
-**Dr. Nils Roemer** – Co-Founder, Planningio GmbH  
-**Dr. Tobias Vlćek** – Founder, BeyondSimulations GmbH & Universität Hamburg
+::::
