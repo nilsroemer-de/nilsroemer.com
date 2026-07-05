@@ -42,9 +42,23 @@
     "text": "5. Changes to this Privacy Policy\nI may update this Privacy Policy from time to time. I will notify you of any significant changes by posting the new policy on this page and updating the date at the top. I encourage you to review this policy periodically."
   },
   {
-    "objectID": "lectures.html",
-    "href": "lectures.html",
-    "title": "Lectures",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Nils Roemer",
+    "section": "",
+    "text": "Photo © Xenia Bluhm\n\n\n\nI am an entrepreneur, researcher, and lecturer based in Hamburg, Germany.\nI hold a degree in Business Administration with a focus on Operations and Supply Chain Management (2018) and a PhD in Operations Research and Mathematical Optimization (2022). Since 2023, I am Co-Founder and Managing Director of Planningio GmbH, a Hamburg-based software and consulting company specializing in mathematical optimization.\nOur projects span automated production planning for the beverage industry, crowd management, warehouse simulation, and industrial digitalization.\nI teach to inspire students to think analytically and to bring quantitative methods to life through real-world applications.\n\n LinkedIn Email"
+  },
+  {
+    "objectID": "index.html#dr.-nils-roemer",
+    "href": "index.html#dr.-nils-roemer",
+    "title": "Nils Roemer",
+    "section": "",
+    "text": "I am an entrepreneur, researcher, and lecturer based in Hamburg, Germany.\nI hold a degree in Business Administration with a focus on Operations and Supply Chain Management (2018) and a PhD in Operations Research and Mathematical Optimization (2022). Since 2023, I am Co-Founder and Managing Director of Planningio GmbH, a Hamburg-based software and consulting company specializing in mathematical optimization.\nOur projects span automated production planning for the beverage industry, crowd management, warehouse simulation, and industrial digitalization.\nI teach to inspire students to think analytically and to bring quantitative methods to life through real-world applications.\n\n LinkedIn Email"
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "CV",
     "section": "",
     "text": "This page is under construction."
   },
@@ -91,93 +105,9 @@
     "text": "Copyright\nAll contents presented on this website, such as texts, photographs, and graphics, are protected by copyright. Any reproduction, distribution, or use outside the limits of copyright law requires the prior written consent of the respective rights holder. The portrait photograph on the homepage is © Xenia Bluhm."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Nils Roemer",
-    "section": "",
-    "text": "Photo © Xenia Bluhm\n\n\n\nI am an entrepreneur, researcher, and lecturer based in Hamburg, Germany.\nI hold a degree in Business Administration with a focus on Operations and Supply Chain Management (2018) and a PhD in Operations Research and Mathematical Optimization (2022). Since 2023, I am Co-Founder and Managing Director of Planningio GmbH, a Hamburg-based software and consulting company specializing in mathematical optimization.\nOur projects span automated production planning for the beverage industry, crowd management, warehouse simulation, and industrial digitalization.\nI teach to inspire students to think analytically and to bring quantitative methods to life through real-world applications.\n\n LinkedIn Email"
-  },
-  {
-    "objectID": "index.html#dr.-nils-roemer",
-    "href": "index.html#dr.-nils-roemer",
-    "title": "Nils Roemer",
-    "section": "",
-    "text": "I am an entrepreneur, researcher, and lecturer based in Hamburg, Germany.\nI hold a degree in Business Administration with a focus on Operations and Supply Chain Management (2018) and a PhD in Operations Research and Mathematical Optimization (2022). Since 2023, I am Co-Founder and Managing Director of Planningio GmbH, a Hamburg-based software and consulting company specializing in mathematical optimization.\nOur projects span automated production planning for the beverage industry, crowd management, warehouse simulation, and industrial digitalization.\nI teach to inspire students to think analytically and to bring quantitative methods to life through real-world applications.\n\n LinkedIn Email"
-  },
-  {
-    "objectID": "kontext.html",
-    "href": "kontext.html",
-    "title": "Projektkontext",
-    "section": "",
-    "text": "Persönliche Website von Dr. Nils Roemer unter nilsroemer.com. Die Seite dient als zentrale Anlaufstelle für seine Lehrtätigkeit. Von der Startseite aus gelangt man zu einem Lehrbereich, der modular wächst: Kurse, Workshops und andere Lehrveranstaltungen werden nach und nach ergänzt, jeweils mit eigenen Unterlagen, Materialien und Inhalten.\nDer erste Kurs ist noch nicht final festgelegt. Die technische Struktur wird so aufgebaut, dass Kurse einfach ergänzt werden können.\n\n\n\n\nStartseite: Kurzvorstellung von Nils Roemer\nLehre: Übersichtsseite mit allen Kursen und Workshops\n\nKurse und Workshops folgen modular\n\n\n\n\n\nhttps://nilsroemer.com\n\n\n\nhttps://github.com/Nilsthehustlertoast/my-test-course\n\n\n\n/Users/nils/Projekte/my-test-course\n\n\n\n\nQuarto 1.9.37 für die Website\nGitHub Pages für Hosting\nCustom Domain nilsroemer.com via Strato (A-Record auf GitHub Pages IP)\nClaude Code als Editor und KI-Assistent\nGit für Versionskontrolle\n\n\n\n\n\nÄnderungen in Claude Code vornehmen\ngit add .\ngit commit -m \"Beschreibung\"\ngit push\nquarto publish gh-pages\n\n\n\n\n\nStartseite (index.qmd) vorhanden aber noch auf einen alten Kurs ausgerichtet, muss zur persönlichen Startseite umgebaut werden\nDomain nilsroemer.com eingerichtet und mit GitHub Pages verbunden\nLehrbereich und Kursseiten fehlen noch\n\n\n\n\n\nStartseite zu persönlicher Vorstellungsseite umbauen\nLehrbereich anlegen mit Übersichtsseite\nErsten Kurs als Unterseite einbinden wenn Kursinhalt feststeht"
-  },
-  {
-    "objectID": "kontext.html#projekt",
-    "href": "kontext.html#projekt",
-    "title": "Projektkontext",
-    "section": "",
-    "text": "Persönliche Website von Dr. Nils Roemer unter nilsroemer.com. Die Seite dient als zentrale Anlaufstelle für seine Lehrtätigkeit. Von der Startseite aus gelangt man zu einem Lehrbereich, der modular wächst: Kurse, Workshops und andere Lehrveranstaltungen werden nach und nach ergänzt, jeweils mit eigenen Unterlagen, Materialien und Inhalten.\nDer erste Kurs ist noch nicht final festgelegt. Die technische Struktur wird so aufgebaut, dass Kurse einfach ergänzt werden können."
-  },
-  {
-    "objectID": "kontext.html#struktur-geplant",
-    "href": "kontext.html#struktur-geplant",
-    "title": "Projektkontext",
-    "section": "",
-    "text": "Startseite: Kurzvorstellung von Nils Roemer\nLehre: Übersichtsseite mit allen Kursen und Workshops\n\nKurse und Workshops folgen modular"
-  },
-  {
-    "objectID": "kontext.html#live-url",
-    "href": "kontext.html#live-url",
-    "title": "Projektkontext",
-    "section": "",
-    "text": "https://nilsroemer.com"
-  },
-  {
-    "objectID": "kontext.html#github-repository",
-    "href": "kontext.html#github-repository",
-    "title": "Projektkontext",
-    "section": "",
-    "text": "https://github.com/Nilsthehustlertoast/my-test-course"
-  },
-  {
-    "objectID": "kontext.html#lokaler-pfad-mac",
-    "href": "kontext.html#lokaler-pfad-mac",
-    "title": "Projektkontext",
-    "section": "",
-    "text": "/Users/nils/Projekte/my-test-course"
-  },
-  {
-    "objectID": "kontext.html#tech-stack",
-    "href": "kontext.html#tech-stack",
-    "title": "Projektkontext",
-    "section": "",
-    "text": "Quarto 1.9.37 für die Website\nGitHub Pages für Hosting\nCustom Domain nilsroemer.com via Strato (A-Record auf GitHub Pages IP)\nClaude Code als Editor und KI-Assistent\nGit für Versionskontrolle"
-  },
-  {
-    "objectID": "kontext.html#workflow",
-    "href": "kontext.html#workflow",
-    "title": "Projektkontext",
-    "section": "",
-    "text": "Änderungen in Claude Code vornehmen\ngit add .\ngit commit -m \"Beschreibung\"\ngit push\nquarto publish gh-pages"
-  },
-  {
-    "objectID": "kontext.html#aktueller-stand",
-    "href": "kontext.html#aktueller-stand",
-    "title": "Projektkontext",
-    "section": "",
-    "text": "Startseite (index.qmd) vorhanden aber noch auf einen alten Kurs ausgerichtet, muss zur persönlichen Startseite umgebaut werden\nDomain nilsroemer.com eingerichtet und mit GitHub Pages verbunden\nLehrbereich und Kursseiten fehlen noch"
-  },
-  {
-    "objectID": "kontext.html#nächste-schritte",
-    "href": "kontext.html#nächste-schritte",
-    "title": "Projektkontext",
-    "section": "",
-    "text": "Startseite zu persönlicher Vorstellungsseite umbauen\nLehrbereich anlegen mit Übersichtsseite\nErsten Kurs als Unterseite einbinden wenn Kursinhalt feststeht"
-  },
-  {
-    "objectID": "cv.html",
-    "href": "cv.html",
-    "title": "CV",
+    "objectID": "lectures.html",
+    "href": "lectures.html",
+    "title": "Lectures",
     "section": "",
     "text": "This page is under construction."
   }

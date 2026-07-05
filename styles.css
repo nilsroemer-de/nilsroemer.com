@@ -1,8 +1,5 @@
-/* Inter is self-hosted via @font-face in custom.scss (no Google Fonts CDN). */
-
-body {
-  font-family: 'Inter', sans-serif;
-}
+/* Fonts, colours and link styling live in custom.scss + _brand.yml.
+   This file holds only the profile-page layout. */
 
 /* Remove top padding on main content */
 #quarto-content main {
@@ -37,7 +34,7 @@ body {
 .profile-photo small {
   display: block;
   margin-top: 0.4rem;
-  color: #999;
+  color: var(--fg-3);
   font-size: 0.75rem;
   text-align: center;
 }
@@ -51,19 +48,8 @@ body {
   margin-top: 0;
   font-size: 1.8rem;
   font-weight: 600;
-  color: #111;
+  color: var(--ink);
   line-height: 1.2;
-}
-
-/* Inline links same color as body text */
-.profile-text p a {
-  color: inherit;
-  text-decoration: underline;
-  text-decoration-color: #ccc;
-}
-
-.profile-text p a:hover {
-  text-decoration-color: #888;
 }
 
 /* Social links as icons */
@@ -78,7 +64,7 @@ body {
 }
 
 .social-links a {
-  color: #555;
+  color: var(--fg-2);
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -88,7 +74,7 @@ body {
 }
 
 .social-links a:hover {
-  color: #111;
+  color: var(--ink);
 }
 
 .social-links a svg {
@@ -97,22 +83,7 @@ body {
   flex-shrink: 0;
 }
 
-/* Navbar: slim, no bold branding */
-.navbar {
-  font-family: 'Inter', sans-serif;
-}
-
+/* Navbar: no bold branding (styling is in custom.scss) */
 .navbar-brand {
   display: none !important;
-}
-
-.navbar-nav .nav-link {
-  font-weight: 400;
-  font-size: 0.9rem;
-  color: #444 !important;
-}
-
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link.active {
-  color: #111 !important;
 }
