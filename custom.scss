@@ -1,30 +1,156 @@
 /*-- scss:defaults --*/
 
-// Suppress the cosmo theme's Google Fonts @import (Source Sans Pro),
-// so no visitor requests go to fonts.googleapis.com / fonts.gstatic.com.
+// Suppress the cosmo theme's Google Fonts @import (Source Sans Pro), so no
+// visitor requests go to fonts.googleapis.com / fonts.gstatic.com. All fonts
+// are self-hosted via @font-face below.
 $web-font-path: false;
-
-// Use the locally self-hosted Inter (see @font-face rules below) everywhere.
-$font-family-sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !default;
 
 /*-- scss:rules --*/
 
-// Self-hosted Inter (variable font, weights 400–600), served from /fonts.
-// Replaces the previous Google Fonts CDN embed for GDPR reasons.
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400 600;
-  font-display: swap;
-  src: url("/fonts/Inter-latin.woff2") format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+/* ================================================================
+   Self-hosted fonts — Poppins (headings), Inter (body),
+   Space Mono (meta labels). latin + latin-ext, served from /fonts.
+   No Google Fonts CDN (GDPR). Ranges are the Google standard subsets.
+   ================================================================ */
+$latin: "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD";
+$latinext: "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF";
+
+// Poppins — static instances 400/500/600/700
+@each $w in 400, 500, 600, 700 {
+  @font-face {
+    font-family: "Poppins"; font-style: normal; font-weight: $w; font-display: swap;
+    src: url("/fonts/poppins-#{$w}-latin.woff2") format("woff2");
+    unicode-range: #{$latin};
+  }
+  @font-face {
+    font-family: "Poppins"; font-style: normal; font-weight: $w; font-display: swap;
+    src: url("/fonts/poppins-#{$w}-latinext.woff2") format("woff2");
+    unicode-range: #{$latinext};
+  }
 }
 
+// Inter — variable font, one file covers weights 400–700
 @font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400 600;
-  font-display: swap;
-  src: url("/fonts/Inter-latinext.woff2") format("woff2");
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  font-family: "Inter"; font-style: normal; font-weight: 400 700; font-display: swap;
+  src: url("/fonts/inter-latin.woff2") format("woff2");
+  unicode-range: #{$latin};
+}
+@font-face {
+  font-family: "Inter"; font-style: normal; font-weight: 400 700; font-display: swap;
+  src: url("/fonts/inter-latinext.woff2") format("woff2");
+  unicode-range: #{$latinext};
+}
+
+// Space Mono — static instances 400/700
+@each $w in 400, 700 {
+  @font-face {
+    font-family: "Space Mono"; font-style: normal; font-weight: $w; font-display: swap;
+    src: url("/fonts/spacemono-#{$w}-latin.woff2") format("woff2");
+    unicode-range: #{$latin};
+  }
+  @font-face {
+    font-family: "Space Mono"; font-style: normal; font-weight: $w; font-display: swap;
+    src: url("/fonts/spacemono-#{$w}-latinext.woff2") format("woff2");
+    unicode-range: #{$latinext};
+  }
+}
+
+/* ================================================================
+   Design tokens (from Planningio DESIGN-TOKENS.md — adopted subset).
+   Colours: ink + primary + sky family + text/border palette.
+   No grapefruit/rose (not a CTA site).
+   ================================================================ */
+:root {
+  --ink:            #1e2648;
+  --primary:        #01579b;
+  --primary-light:  #85bae3;
+  --primary-faint:  #d2e7f8;
+  --milk:           #edf1f5;
+  --sky-100:        #f3f8fd;
+  --sky-200:        #e7f1fb;
+  --sky-300:        #cfe2f4;
+  --sky-500:        #9cc6e8;
+  --fg-1:           #1e2648;
+  --fg-2:           #4a5578;
+  --fg-3:           #8a93ad;
+  --border:         #dde5ee;
+  --border-strong:  #c3d2e2;
+  --border-faint:   #eef3f8;
+
+  /* spacing — 4px base */
+  --space-1: 4px;  --space-2: 8px;  --space-3: 12px; --space-4: 16px;
+  --space-5: 24px; --space-6: 32px; --space-7: 48px; --space-8: 64px; --space-9: 96px;
+
+  /* radii (pill intentionally omitted) */
+  --r-xs: 6px; --r-sm: 10px; --r-md: 14px; --r-lg: 20px; --r-xl: 28px;
+
+  /* soft, low-contrast, blue-tinted shadows */
+  --shadow-xs: 0 1px 2px  rgba(30,38,72,.06);
+  --shadow-sm: 0 2px 8px  rgba(30,38,72,.07);
+  --shadow-md: 0 8px 24px rgba(30,38,72,.09);
+  --shadow-lg: 0 20px 48px rgba(30,38,72,.12);
+}
+
+/* ================================================================
+   Headings — Poppins (via _brand.yml); tighten tracking to match source
+   ================================================================ */
+h1, .h1 { letter-spacing: -.018em; line-height: 1.08; color: var(--ink); }
+h2, .h2 { letter-spacing: -.012em; line-height: 1.15; color: var(--ink); }
+h3, .h3 { letter-spacing: -.006em; color: var(--ink); }
+
+/* ================================================================
+   Prose / inline links — ink text with a primary-blue underline;
+   hover -> primary text. Scoped to main content so navbar, footer,
+   TOC and the icon-only social links keep their own styling.
+   ================================================================ */
+#quarto-content p a,
+#quarto-content li a {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--primary);
+  transition: color .2s ease, border-color .2s ease;
+}
+#quarto-content p a:hover,
+#quarto-content li a:hover {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+}
+
+/* ================================================================
+   Navbar — light and plain (no frosted glass, no coloured bar)
+   ================================================================ */
+.navbar {
+  background-color: #fff;
+  border-bottom: 1px solid var(--border);
+  box-shadow: var(--shadow-xs);
+}
+.navbar .navbar-nav .nav-link {
+  font-family: "Poppins", system-ui, sans-serif;
+  font-weight: 500;
+  font-size: .95rem;
+  color: var(--fg-2);
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+  color: var(--ink);
+}
+
+/* ================================================================
+   Footer — subtle; Space Mono meta labels (Imprint · Privacy)
+   ================================================================ */
+.nav-footer {
+  border-top: 1px solid var(--border);
+  background: #fff;
+  font-family: "Space Mono", ui-monospace, Menlo, monospace;
+  font-size: .8rem;
+}
+.nav-footer a {
+  color: var(--fg-3);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color .2s ease, border-color .2s ease;
+}
+.nav-footer a:hover {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
 }

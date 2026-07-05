@@ -1,0 +1,43 @@
+# Brand for courses/homepage — derived from the Planningio design system.
+# See DESIGN-TOKENS.md §5. Adopted: navy/blue palette, sky surfaces, typography.
+# NOT adopted: grapefruit CTA colour, pill buttons, three-bar motif, grain, waves, logo.
+#
+# NOTE on fonts: the @font-face declarations live in custom.scss, not here.
+# Quarto 1.9 brand fonts do not support `unicode-range` (see the commented-out
+# field in the brand schema), which the latin + latin-ext split requires. So this
+# file only assigns the family names; custom.scss self-hosts the woff2 files.
+
+color:
+  palette:
+    ink:            "#1e2648"
+    primary-blue:   "#01579b"
+    primary-light:  "#85bae3"
+    primary-faint:  "#d2e7f8"
+    milk:           "#edf1f5"
+    sky-100:        "#f3f8fd"
+    sky-200:        "#e7f1fb"
+    sky-300:        "#cfe2f4"
+    sky-500:        "#9cc6e8"
+    fg-2:           "#4a5578"
+    fg-3:           "#8a93ad"
+    border:         "#dde5ee"
+    border-strong:  "#c3d2e2"
+    border-faint:   "#eef3f8"
+    white:          "#ffffff"
+  foreground: ink
+  background: white
+  primary:    primary-blue
+  secondary:  fg-2
+  light:      milk
+  link:       primary-blue
+
+typography:
+  base:
+    family: Inter
+    line-height: 1.6
+  headings:
+    family: Poppins
+    weight: 600
+    line-height: 1.2
+  monospace:
+    family: Space Mono
