@@ -4,6 +4,8 @@ subtitle: "How I handle your data"
 date: "2026-07-05"
 ---
 
+# Privacy Policy
+
 ## 1. Controller
 
 The controller responsible for data processing on this website is:

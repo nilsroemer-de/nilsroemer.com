@@ -2,4 +2,19 @@
 title: "Lectures"
 ---
 
-*This page is under construction.*
+# Teaching
+
+I teach quantitative and computational methods with a focus on making
+algorithmic thinking accessible to business students — connecting optimization
+and data-driven decision-making to practical, everyday problems.
+
+## Programming: Everyday Decision-Making Algorithms
+
+Kühne Logistics University · [ongoing]{.cv-meta}
+
+An English-language course based on the book *Algorithms to Live By*. It
+introduces business students to algorithmic decision-making — from optimal
+stopping and scheduling to caching and randomness — alongside a hands-on
+introduction to Python, with no prior programming experience required.
+
+[Course website →](https://courses.nilsroemer.com)

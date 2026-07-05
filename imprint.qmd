@@ -4,6 +4,8 @@ subtitle: "Legal notice"
 date: "2026-07-05"
 ---
 
+# Imprint
+
 ## Provider and responsible for content
 
 Information pursuant to § 5 DDG (German Digital Services Act) and responsibility for content pursuant to § 18(2) MStV:

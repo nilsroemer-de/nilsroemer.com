@@ -117,6 +117,16 @@ h3, .h3 { letter-spacing: -.006em; color: var(--ink); }
 }
 
 /* ================================================================
+   CV / lecture meta — dates & periods in Space Mono (muted)
+   ================================================================ */
+.cv-meta {
+  font-family: "Space Mono", ui-monospace, Menlo, monospace;
+  font-size: .8rem;
+  color: var(--fg-3);
+  white-space: nowrap;
+}
+
+/* ================================================================
    Navbar — light and plain (no frosted glass, no coloured bar)
    ================================================================ */
 .navbar {

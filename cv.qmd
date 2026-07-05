@@ -1,5 +1,68 @@
 ---
-title: "CV"
+title: "Curriculum Vitae"
 ---
 
-*This page is under construction.*
+# Curriculum Vitae
+
+## Experience
+
+**Co-Founder & Managing Director** — Planningio GmbH, Hamburg · [since 2023]{.cv-meta}
+
+- Development of automation and optimization solutions for production planning, with a focus on the beverage and process industries
+- Responsible for commercial and administrative management; secured more than €300,000 in external funding
+
+**Lecturer** — Kühne Logistics University, Hamburg · [since 2024]{.cv-meta}
+
+- English-language course based on the book "Algorithms to Live By", focusing on algorithms and optimization in everyday and business decisions
+- Developed a hands-on Python format introducing students to data-driven decision models
+
+**Lecturer** — Universität Hamburg · [2023]{.cv-meta}
+
+- Interdisciplinary course on entrepreneurship in operations and supply chain management
+- Strong involvement of industry partners to give students real-world founding experience
+
+**Research Associate** — Universität Hamburg · [2018 – 2022]{.cv-meta}
+
+- Teaching in production and logistics (B.Sc.) and supply chain management (M.Sc.); supervision of seminar, bachelor's, and master's theses on quantitative methods
+- Research and publications in business analytics
+
+**Intern, Supply Chain Management** — Wallenius Wilhelmsen, Bremen · [2016]{.cv-meta}
+
+- Contributed to a factory-to-dealer approach for BMW to efficiently manage global vehicle supply chains
+
+## Education
+
+**Dr. rer. oec.** (summa cum laude) — Universität Hamburg · [2018 – 2022]{.cv-meta}
+
+Dissertation: "Choice-based analytics with applications in supply chain contracting and carbon emission reduction initiatives"
+
+**M.Sc. Business Administration** (grade 1.1, top of class) — Universität Hamburg · [2015 – 2018]{.cv-meta}
+
+**B.Sc. Business Administration** — Universität Hamburg · [2012 – 2015]{.cv-meta}
+
+## Publications
+
+- Roemer et al. (2023). A Choice-based Optimization Approach for Contracting in Supply Chains. *European Journal of Operational Research*, 305(1), 271–286.
+- Roemer et al. (2023). Offset or reduce: How should firms implement carbon footprint reduction initiatives? *Production and Operations Management*, 32(9), 2940–2955.
+
+## Awards
+
+- Professor Herbert Jacob Prize, Universitätsgesellschaft Hamburg (2024) — for an outstanding dissertation in business administration with high scientific and practical relevance
+- Gründungspreis, Digital Innovations Competition, German Federal Ministry for Economic Affairs and Climate Action (2023) — Planningio recognized as one of Germany's most innovative start-ups
+- Best Master's Graduate, Universität Hamburg (2018)
+- DPG Abitur Prize, German Physical Society (2011)
+
+## Academic Service
+
+- Reviewer for OR Spectrum and Transportation Research
+- Juror for the Hamburg Teaching Award and the KREATI case study competition (Verband Deutscher Wirtschaftsingenieure e.V.)
+
+## Skills
+
+**Core:** Mathematical optimization & operations research · Statistics & data science · Supply chain management & logistics · Entrepreneurship & business leadership
+
+**Tools:** Python, R, VBA · GAMS, MATLAB, CPLEX · STATA, SPSS · LaTeX, Quarto
+
+## Languages
+
+German (native) · English (fluent) · French (basic)
