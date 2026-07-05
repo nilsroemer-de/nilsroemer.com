@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+/* Inter is self-hosted via @font-face in custom.scss (no Google Fonts CDN). */
 
 body {
   font-family: 'Inter', sans-serif;
