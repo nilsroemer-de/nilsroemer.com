@@ -1,5 +1,6 @@
 ---
 pagetitle: "Curriculum Vitae"
+toc: false
 ---
 
 # Curriculum Vitae
