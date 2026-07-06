@@ -1,7 +1,5 @@
 ---
-title: "Privacy Policy"
-subtitle: "How I handle your data"
-date: "2026-07-05"
+pagetitle: "Privacy Policy"
 ---
 
 # Privacy Policy
@@ -46,4 +44,4 @@ To exercise any of these rights, please contact me as the controller using the d
 
 ## 5. Changes to this Privacy Policy
 
-I may update this Privacy Policy from time to time. I will notify you of any significant changes by posting the new policy on this page and updating the date at the top. I encourage you to review this policy periodically.
+I may update this Privacy Policy from time to time. The current version is always the one published on this page. I encourage you to review this policy periodically.

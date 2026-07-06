@@ -1,5 +1,5 @@
 ---
-title: ""
+pagetitle: "Nils Roemer"
 ---
 
 <div class="profile-columns">
@@ -11,7 +11,7 @@ title: ""
 
 ## Dr. Nils Roemer
 
-I am a researcher, entrepreneur, and lecturer based in Hamburg, Germany.
+I am an entrepreneur, researcher, and lecturer based in Hamburg, Germany.
 
 I hold a degree in Business Administration with a focus on Operations and Supply Chain Management (2018) and a PhD in Operations Research and Mathematical Optimization (2022). Since 2023, I am Co-Founder and Managing Director of [Planningio GmbH](https://planningio.com), a Hamburg-based software and consulting company specializing in mathematical optimization.
 

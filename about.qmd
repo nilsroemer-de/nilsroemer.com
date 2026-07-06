@@ -1,5 +1,5 @@
 ---
-title: "About"
+pagetitle: "About"
 ---
 
 About this site

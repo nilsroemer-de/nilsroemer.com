@@ -1,5 +1,5 @@
 ---
-title: "Curriculum Vitae"
+pagetitle: "Curriculum Vitae"
 ---
 
 # Curriculum Vitae
@@ -8,8 +8,9 @@ title: "Curriculum Vitae"
 
 **Co-Founder & Managing Director** — Planningio GmbH, Hamburg · [since 2023]{.cv-meta}
 
-- Development of automation and optimization solutions for production planning, with a focus on the beverage and process industries
-- Responsible for commercial and administrative management; secured more than €300,000 in external funding
+Planningio is a Hamburg-based consulting boutique and software company specializing in mathematical optimization, simulation, and digital twins ([planningio.com](https://planningio.com)). We combine analysis, modeling, and implementation from a single source, with projects ranging from one-off analyses to production-grade software.
+
+- Clients across industry, logistics, infrastructure, and major events, from automated production planning in the beverage industry to crowd management for millions of pilgrims in Makkah
 
 **Lecturer** — Kühne Logistics University, Hamburg · [since 2024]{.cv-meta}
 
@@ -28,7 +29,8 @@ title: "Curriculum Vitae"
 
 **Intern, Supply Chain Management** — Wallenius Wilhelmsen, Bremen · [2016]{.cv-meta}
 
-- Contributed to a factory-to-dealer approach for BMW to efficiently manage global vehicle supply chains
+- Norwegian-Swedish shipping company specializing in rolling cargo, in particular global vehicle logistics
+- Contributed to implementing a factory-to-dealer approach for BMW to efficiently manage global vehicle supply chains
 
 ## Education
 
@@ -36,21 +38,27 @@ title: "Curriculum Vitae"
 
 Dissertation: "Choice-based analytics with applications in supply chain contracting and carbon emission reduction initiatives"
 
-**M.Sc. Business Administration** (grade 1.1, top of class) — Universität Hamburg · [2015 – 2018]{.cv-meta}
+**M.Sc. Business Administration** — Universität Hamburg · [2015 – 2018]{.cv-meta}
 
 **B.Sc. Business Administration** — Universität Hamburg · [2012 – 2015]{.cv-meta}
 
 ## Publications
 
-- Roemer et al. (2023). A Choice-based Optimization Approach for Contracting in Supply Chains. *European Journal of Operational Research*, 305(1), 271–286.
-- Roemer et al. (2023). Offset or reduce: How should firms implement carbon footprint reduction initiatives? *Production and Operations Management*, 32(9), 2940–2955.
+### Journal Articles
 
-## Awards
+- Roemer, N., Müller, S., & Voigt, G. (2023). A choice-based optimization approach for contracting in supply chains. *European Journal of Operational Research*, 305(1), 271–286. [doi.org/10.1016/j.ejor.2022.05.052](https://doi.org/10.1016/j.ejor.2022.05.052)
+- Roemer, N., Souza, G. C., Tröster, C., & Voigt, G. (2023). Offset or reduce: How should firms implement carbon footprint reduction initiatives? *Production and Operations Management*, 32(9), 2940–2955. [doi.org/10.1111/poms.14017](https://doi.org/10.1111/poms.14017)
 
-- Professor Herbert Jacob Prize, Universitätsgesellschaft Hamburg (2024) — for an outstanding dissertation in business administration with high scientific and practical relevance
-- Gründungspreis, Digital Innovations Competition, German Federal Ministry for Economic Affairs and Climate Action (2023) — Planningio recognized as one of Germany's most innovative start-ups
+### Working Papers
+
+- Roemer, N. Strategic product returns and the optimization of shipping fee policies in online retailing. Working paper.
+- Roemer, N., & Voigt, G. Carbon emission reduction preferences and hypothetical bias in experiments on sustainability. Working paper.
+
+## Awards & Honors
+
+- [Professor Herbert Jacob Prize](https://uni-gesellschaft-hh.de/engagement/wissenschaftspreise/), Universitäts-Gesellschaft Hamburg (2024), biennial dissertation prize for business administration research with high relevance for both academia and practice
+- Gründungspreis, Digital Innovations Competition, German Federal Ministry for Economic Affairs and Climate Action (2023), Planningio recognized as one of Germany's most innovative start-ups
 - Best Master's Graduate, Universität Hamburg (2018)
-- DPG Abitur Prize, German Physical Society (2011)
 
 ## Academic Service
 
@@ -61,7 +69,7 @@ Dissertation: "Choice-based analytics with applications in supply chain contract
 
 **Core:** Mathematical optimization & operations research · Statistics & data science · Supply chain management & logistics · Entrepreneurship & business leadership
 
-**Tools:** Python, R, VBA · GAMS, MATLAB, CPLEX · STATA, SPSS · LaTeX, Quarto
+**Tools:** Python, R · GAMS, MATLAB, CPLEX · LaTeX, Quarto
 
 ## Languages
 
