@@ -75,7 +75,7 @@ _site/             # Build-Output, gitignored, nie manuell bearbeiten
   - Änderungen an Rechtstexten vor dem Einarbeiten als Vorschlag zeigen und von Nils freigeben lassen.
 - **Inhaltsverzeichnis:** Global ist `toc: true`; Seiten ohne TOC setzen `toc: false` im Header (aktuell CV und Lectures).
 - **Keine Gedankenstriche als Satzzeichen im sichtbaren Text.** Sätze stattdessen umformulieren (Komma, Punkt, Klammer). Bereichsangaben wie `2018–2022` und Seitenzahlen wie `271–286` bleiben.
-- **Links im Fließtext:** Primärfarbe, ohne Unterstreichung, Unterstreichung nur bei Hover (seitenweite Regel in `custom.scss`).
+- **Links im Fließtext:** Primärfarbe, ohne Unterstreichung, Unterstreichung nur bei Hover (seitenweite Regel in `custom.scss`). Ausnahme CV-Seite: Links in Textfarbe, bei Hover Primärfarbe und Unterstreichung.
 - **CV-Aufbau:** Rolle bzw. Abschluss als `###`, darunter Organisation und Zeitraum als eigene Zeile `[…]{.cv-meta}` (Space Mono, gedämpft), darunter Text oder Unterpunkte. Publikationen und Preise als einzelne Absätze ohne Aufzählungspunkte. Auf der Lehre-Seite wird `.cv-meta` inline verwendet.
 - **Bilder:** Fotos vor dem Einchecken auf max. 1000 px Breite skalieren, für Web komprimieren und EXIF-Metadaten entfernen. Das Porträt ist per CSS gegen Rechtsklick/Drag geschützt; Bildnachweis unter dem Foto belassen.
 - **Build-Artefakte** (`_site/`, `.quarto/`, `.DS_Store`) niemals committen.
