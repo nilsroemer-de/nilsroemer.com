@@ -67,17 +67,6 @@
   }
 }
 
-/* Prose links on the homepage: primary colour, no underline,
-   underline only on hover (overrides the site-wide rule in custom.scss) */
-#quarto-content .profile-text p a {
-  color: var(--primary);
-  border-bottom-color: transparent;
-}
-
-#quarto-content .profile-text p a:hover {
-  border-bottom-color: var(--primary);
-}
-
 .profile-text h2 {
   margin-top: 0;
   font-size: 1.8rem;

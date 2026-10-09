@@ -99,15 +99,15 @@ h2, .h2 { letter-spacing: -.012em; line-height: 1.15; color: var(--ink); }
 h3, .h3 { letter-spacing: -.006em; color: var(--ink); }
 
 /* ================================================================
-   Prose / inline links — ink text with a primary-blue underline;
-   hover -> primary text. Scoped to main content so navbar, footer,
+   Prose / inline links — primary colour, no underline; the underline
+   appears on hover only. Scoped to main content so navbar, footer,
    TOC and the icon-only social links keep their own styling.
    ================================================================ */
 #quarto-content p a,
 #quarto-content li a {
-  color: var(--ink);
+  color: var(--primary);
   text-decoration: none;
-  border-bottom: 1px solid var(--primary);
+  border-bottom: 1px solid transparent;
   transition: color .2s ease, border-color .2s ease;
 }
 #quarto-content p a:hover,
@@ -124,6 +124,69 @@ h3, .h3 { letter-spacing: -.006em; color: var(--ink); }
   font-size: .8rem;
   color: var(--fg-3);
   white-space: nowrap;
+}
+
+/* ================================================================
+   CV page (content wrapped in ::: {.cv}) — small labels, lots of air
+   ================================================================ */
+.cv h1 {
+  margin-bottom: 1rem;
+}
+
+/* Section titles as small uppercase labels (Planningio eyebrow style) */
+.cv h2 {
+  font-family: "Poppins", system-ui, sans-serif;
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--primary);
+  border-bottom: none;
+  margin-top: 4rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0;
+}
+
+/* Role / degree / publication group */
+.cv h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 2.25rem;
+  margin-bottom: .35rem;
+}
+.cv h2 + section.level3 > h3 {
+  margin-top: 0;
+}
+
+/* Organisation + period as a label on its own line under the h3 */
+.cv .cv-meta {
+  display: block;
+  white-space: normal;
+  line-height: 1.5;
+}
+.cv p:has(> .cv-meta:only-child) {
+  margin-bottom: .9rem;
+}
+
+/* Running text and bullets */
+.cv p {
+  margin-bottom: .9rem;
+}
+.cv ul {
+  padding-left: 1.1rem;
+  margin-bottom: 0;
+}
+.cv li {
+  margin-bottom: .35rem;
+}
+.cv li::marker {
+  color: var(--fg-3);
+}
+
+/* Publications: hanging indent, references as paragraphs */
+.cv #publications p {
+  padding-left: 1.5rem;
+  text-indent: -1.5rem;
 }
 
 /* ================================================================

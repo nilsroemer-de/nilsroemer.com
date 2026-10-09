@@ -3,75 +3,82 @@ pagetitle: "Curriculum Vitae"
 toc: false
 ---
 
+::: {.cv}
+
 # Curriculum Vitae
 
 ## Experience
 
-**Co-Founder & Managing Director** — Planningio GmbH, Hamburg · [since 2023]{.cv-meta}
+### Co-Founder & Managing Director
+[Planningio GmbH, Hamburg · since 2023]{.cv-meta}
 
-Planningio is a Hamburg-based consulting boutique and software company specializing in mathematical optimization, simulation, and digital twins ([planningio.com](https://planningio.com)). We combine analysis, modeling, and implementation from a single source, with projects ranging from one-off analyses to production-grade software.
+Hamburg-based consulting boutique and software company specializing in mathematical optimization, simulation, and digital twins ([planningio.com](https://planningio.com)).
 
+- Analysis, modeling, and implementation from a single source
+- Projects ranging from one-off analyses to production-grade software
 - Clients across industry, logistics, infrastructure, and major events, from automated production planning in the beverage industry to crowd management for millions of pilgrims in Makkah
 
-**Lecturer** — Kühne Logistics University, Hamburg · [since 2024]{.cv-meta}
+### Lecturer
+[Kühne Logistics University, Hamburg · since 2024]{.cv-meta}
 
 - English-language course based on the book "Algorithms to Live By", focusing on algorithms and optimization in everyday and business decisions
 - Developed a hands-on Python format introducing students to data-driven decision models
 
-**Lecturer** — Universität Hamburg · [2023]{.cv-meta}
+### Lecturer
+[Universität Hamburg · 2023]{.cv-meta}
 
 - Interdisciplinary course on entrepreneurship in operations and supply chain management
 - Strong involvement of industry partners to give students real-world founding experience
 
-**Research Associate** — Universität Hamburg · [2018 – 2022]{.cv-meta}
+### Research Associate
+[Universität Hamburg · 2018–2022]{.cv-meta}
 
 - Teaching in production and logistics (B.Sc.) and supply chain management (M.Sc.); supervision of seminar, bachelor's, and master's theses on quantitative methods
 - Research and publications in business analytics
 
-**Intern, Supply Chain Management** — Wallenius Wilhelmsen, Bremen · [2016]{.cv-meta}
+### Intern, Supply Chain Management
+[Wallenius Wilhelmsen, Bremen · 2016]{.cv-meta}
 
 - Norwegian-Swedish shipping company specializing in rolling cargo, in particular global vehicle logistics
 - Contributed to implementing a factory-to-dealer approach for BMW to efficiently manage global vehicle supply chains
 
 ## Education
 
-**Dr. rer. oec.** (summa cum laude) — Universität Hamburg · [2018 – 2022]{.cv-meta}
+### Dr. rer. oec. (summa cum laude)
+[Universität Hamburg · 2018–2022]{.cv-meta}
 
-Dissertation: "Choice-based analytics with applications in supply chain contracting and carbon emission reduction initiatives"
+### M.Sc. Business Administration
+[Universität Hamburg · 2015–2018]{.cv-meta}
 
-**M.Sc. Business Administration** — Universität Hamburg · [2015 – 2018]{.cv-meta}
-
-**B.Sc. Business Administration** — Universität Hamburg · [2012 – 2015]{.cv-meta}
+### B.Sc. Business Administration
+[Universität Hamburg · 2012–2015]{.cv-meta}
 
 ## Publications
 
 ### Journal Articles
 
-- Roemer, N., Müller, S., & Voigt, G. (2023). A choice-based optimization approach for contracting in supply chains. *European Journal of Operational Research*, 305(1), 271–286. [doi.org/10.1016/j.ejor.2022.05.052](https://doi.org/10.1016/j.ejor.2022.05.052)
-- Roemer, N., Souza, G. C., Tröster, C., & Voigt, G. (2023). Offset or reduce: How should firms implement carbon footprint reduction initiatives? *Production and Operations Management*, 32(9), 2940–2955. [doi.org/10.1111/poms.14017](https://doi.org/10.1111/poms.14017)
+Roemer, N., Müller, S., & Voigt, G. (2023). A choice-based optimization approach for contracting in supply chains. *European Journal of Operational Research*, 305(1), 271–286. [doi.org/10.1016/j.ejor.2022.05.052](https://doi.org/10.1016/j.ejor.2022.05.052)
+
+Roemer, N., Souza, G. C., Tröster, C., & Voigt, G. (2023). Offset or reduce: How should firms implement carbon footprint reduction initiatives? *Production and Operations Management*, 32(9), 2940–2955. [doi.org/10.1111/poms.14017](https://doi.org/10.1111/poms.14017)
 
 ### Working Papers
 
-- Roemer, N. Strategic product returns and the optimization of shipping fee policies in online retailing. Working paper.
-- Roemer, N., & Voigt, G. Carbon emission reduction preferences and hypothetical bias in experiments on sustainability. Working paper.
+Roemer, N. Strategic product returns and the optimization of shipping fee policies in online retailing. Working paper.
+
+Roemer, N., & Voigt, G. Carbon emission reduction preferences and hypothetical bias in experiments on sustainability. Working paper.
 
 ## Awards & Honors
 
-- [Professor Herbert Jacob Prize](https://uni-gesellschaft-hh.de/engagement/wissenschaftspreise/), Universitäts-Gesellschaft Hamburg (2024), biennial dissertation prize for business administration research with high relevance for both academia and practice
-- Gründungspreis, Digital Innovations Competition, German Federal Ministry for Economic Affairs and Climate Action (2023), Planningio recognized as one of Germany's most innovative start-ups
-- Best Master's Graduate, Universität Hamburg (2018)
+[Best Teacher Award for External Lecturers](https://www.klu.org/article/top-klu-teachers-professor-dr-hanno-friedrich-and-dr-nils-roemer-receive-best-teacher-awards), Kühne Logistics University (2026)
 
-## Academic Service
+[Professor Herbert Jacob Prize](https://uni-gesellschaft-hh.de/engagement/wissenschaftspreise/), Universitäts-Gesellschaft Hamburg (2024), biennial dissertation prize for business administration research with high relevance for both academia and practice
 
-- Reviewer for OR Spectrum and Transportation Research
-- Juror for the Hamburg Teaching Award and the KREATI case study competition (Verband Deutscher Wirtschaftsingenieure e.V.)
+Gründungspreis, Digital Innovations Competition, German Federal Ministry for Economic Affairs and Climate Action (2023), Planningio recognized as one of Germany's most innovative start-ups
 
-## Skills
-
-**Core:** Mathematical optimization & operations research · Statistics & data science · Supply chain management & logistics · Entrepreneurship & business leadership
-
-**Tools:** Python, R · GAMS, MATLAB, CPLEX · LaTeX, Quarto
+Best Master's Graduate, Universität Hamburg (2018)
 
 ## Languages
 
 German (native) · English (fluent) · French (basic)
+
+:::
