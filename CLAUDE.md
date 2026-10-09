@@ -1,46 +1,95 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+Anleitung für Claude Code (claude.ai/code) beim Arbeiten in diesem Repository.
 
 ## Projektkontext
 
-Persönliche Website von Dr. Nils Roemer unter `nilsroemer.com`. Die Seite dient als zentrale Anlaufstelle für seine Lehrtätigkeit mit modularem Lehrbereich (Kurse, Workshops). Für detaillierten Kontext → `kontext.md`.
+Persönliche Website von Dr. Nils Roemer unter `https://nilsroemer.com`. Sie stellt ihn als Unternehmer, Forscher und Lehrenden vor und bündelt seine Lehrtätigkeit (Übersicht der Kurse, Verweise auf Kurs-Websites). Die Seiteninhalte sind auf Englisch, die Kommunikation im Repo (Commits, diese Datei) auf Deutsch.
+
+Der Name wird immer **„Roemer"** geschrieben, nie „Römer" – auch in Alt-Texten, Metadaten und Dateinamen.
+
+## Infrastruktur
+
+- **Hosting:** GitHub Pages aus dem Branch `gh-pages` des Repos `github.com/nilsroemer-de/nilsroemer.com` (Remote `origin`, SSH).
+- **Branches:** `main` enthält ausschließlich die Quelldateien. `gh-pages` enthält nur den gebauten Output und wird allein von `quarto publish gh-pages` geschrieben – nie manuell.
+- **Domain:** `nilsroemer.com` ist bei Strato registriert. Strato dient **nur als DNS** (A-Records auf die GitHub-Pages-IPs); dort wird nichts gehostet. DNS-Einstellungen nie anfassen.
+- **CNAME:** Die Datei `CNAME` (Inhalt: `nilsroemer.com`) liegt im Repo-Root und ist in `_quarto.yml` unter `project.resources` eingetragen. Dadurch landet sie bei jedem Build in `_site/` und auf `gh-pages`, sonst verliert GitHub Pages die Custom Domain.
+- **Keine CI/CD:** Es gibt keine GitHub Actions und keinen automatischen Deploy. Veröffentlicht wird ausschließlich manuell (siehe Workflow).
+- **Toolchain:** Quarto 1.9.37, Git, Claude Code. Keine Node-/Python-Abhängigkeiten.
 
 ## Wichtige Befehle
 
 ```bash
-# Website lokal rendern und Preview starten
-quarto preview
-
-# Website bauen (Output in _site/)
-quarto render
-
-# Auf GitHub Pages deployen
-quarto publish gh-pages
+quarto preview              # lokal rendern mit Live-Reload
+quarto render               # Build nach _site/ (gitignored)
+quarto publish gh-pages     # Deploy auf GitHub Pages → nilsroemer.com (nur auf Anweisung!)
 ```
 
-Nach dem Deployment ist die Seite unter `https://nilsroemer.com` erreichbar (Custom Domain via Strato → GitHub Pages).
+## Workflow
+
+**Veröffentlichen**
+
+- `quarto publish gh-pages` wird **nur auf ausdrückliche Anweisung von Nils** ausgeführt. Ein Push auf `main` veröffentlicht nichts; erst `publish` ändert die Live-Seite.
+- Vor dem Publish lokal mit `quarto render` prüfen, dass der Build fehlerfrei durchläuft.
+
+**Kleine Änderungen** (Texte, Styling, einzelne Seiten)
+
+- Direkt auf `main` arbeiten, committen und pushen (Commit-Messages auf Deutsch, wie in der Historie).
+
+**Größere Umbauten** (neue Bereiche, Struktur-/Designänderungen, mehrere Seiten gleichzeitig)
+
+- Mit den Superpowers-Skills arbeiten: Brainstorming → Plan → Umsetzung auf einem eigenen Branch in einem Git-Worktree (`superpowers:using-git-worktrees`).
+- Am Ende das Ergebnis zeigen. **Erst nach Freigabe von Nils** in `main` mergen, dann den Branch und den Worktree aufräumen (`superpowers:finishing-a-development-branch`).
+- Auch danach gilt: kein Publish ohne Anweisung.
 
 ## Projektstruktur
 
 ```
-_quarto.yml       # Globale Konfiguration (Navigation, Theme, CSS)
-index.qmd         # Startseite
-about.qmd         # About-Seite (noch Platzhalter)
-styles.css        # Custom CSS
-_site/            # Generierter Output — nie manuell bearbeiten
-kontext.md        # Projekthintergrund und Nächste Schritte
+_quarto.yml        # Projektkonfiguration: Navbar, Footer, Theme, Resources (CNAME, fonts/)
+_brand.yml         # Quarto-Brand: Farbpalette und Schriftfamilien (Planningio-Ableitung)
+custom.scss        # @font-face (self-hosted), Design-Tokens als CSS-Variablen, Navbar/Footer/Links
+styles.css         # Layout der Startseite (Foto + Text, Social-Links), blendet den Title-Block aus
+index.qmd          # Startseite "About": Foto, Kurzvorstellung, LinkedIn/E-Mail
+cv.qmd             # Curriculum Vitae
+lectures.qmd       # Lehre: Kursübersicht mit Links auf externe Kurs-Websites
+imprint.qmd        # Impressum (Rechtstext)
+privacy.qmd        # Datenschutzerklärung (Rechtstext)
+about.qmd          # Platzhalter, nicht in der Navigation verlinkt (siehe offene Punkte)
+CNAME              # Custom Domain für GitHub Pages
+fonts/             # woff2-Dateien: Poppins, Inter, Space Mono (latin + latin-ext)
+nils-roemer.jpg    # Porträtfoto der Startseite (© Xenia Bluhm)
+DESIGN-TOKENS.md   # Referenz: Planningio-Design-System; vom Render ausgeschlossen
+README.md          # Kurzbeschreibung des Repos
+_site/             # Build-Output, gitignored, nie manuell bearbeiten
 ```
 
-## Architektur
+**Navigation:** Navbar (About · CV · Lectures) und Footer (Imprint · Privacy) werden zentral in `_quarto.yml` konfiguriert. Neue Seiten dort eintragen.
 
-- **Quarto Website** (`type: website` in `_quarto.yml`): Jede `.qmd`-Datei wird zu einer HTML-Seite gerendert.
-- **Navigation** wird zentral in `_quarto.yml` unter `website.navbar` konfiguriert — neue Seiten dort eintragen.
-- **Theme:** Cosmo + Brand (`brand`-Theme erlaubt Custom Styling via `_brand.yml`, falls später hinzugefügt).
-- **Deployment:** `quarto publish gh-pages` schreibt den gebauten `_site/`-Ordner in den `gh-pages`-Branch des GitHub-Repos. Der `main`-Branch enthält nur die Quelldateien.
+**Theme:** Cosmo + Brand + `custom.scss`, dazu `styles.css`. Das Design ist eine reduzierte Ableitung des Planningio-Brands (Navy/Blau, Poppins für Überschriften, Inter für Fließtext, Space Mono für Meta-Angaben). Nicht übernommen: Grapefruit-CTA-Farbe, Pill-Buttons, Drei-Balken-Motiv, Grain. Details in `DESIGN-TOKENS.md`.
 
-## Neue Seiten anlegen
+## Konventionen
 
-1. `.qmd`-Datei erstellen (z.B. `lehre/index.qmd` für den Lehrbereich)
-2. In `_quarto.yml` unter `website.navbar` verlinken
-3. `quarto preview` zum Testen, dann committen und `quarto publish gh-pages`
+- **`pagetitle` statt `title`:** Im YAML-Header jeder Seite `pagetitle:` verwenden (setzt nur das `<title>`-Tag). Die sichtbare Überschrift steht als `# …` bzw. `## …` im Body. Grund: `styles.css` blendet den Quarto-Title-Block aus; mit `title:` entstünde eine doppelte Überschrift im DOM.
+- **Keine Requests an Dritte:** Alle Fonts sind self-hosted (`fonts/`, `@font-face` in `custom.scss`; der Google-Fonts-Import des Cosmo-Themes ist über `$web-font-path: false` abgeschaltet). Keine Analytics, keine Cookies, keine eingebetteten Fremdinhalte (Videos, Karten, CDN-Skripte). Die Datenschutzerklärung sichert genau das zu – jede neue Abhängigkeit muss dagegen geprüft werden.
+- **Rechtstexte (`imprint.qmd`, `privacy.qmd`):**
+  - Keine sichtbaren Datumsangaben („Stand: …", „Last updated …") einfügen.
+  - Änderungen an Rechtstexten vor dem Einarbeiten als Vorschlag zeigen und von Nils freigeben lassen.
+- **Inhaltsverzeichnis:** Global ist `toc: true`; Seiten ohne TOC setzen `toc: false` im Header (aktuell CV und Lectures).
+- **Zeitangaben in CV/Lehre:** als `[…]{.cv-meta}` auszeichnen (Space Mono, gedämpft).
+- **Bilder:** Das Porträt ist per CSS gegen Rechtsklick/Drag geschützt; Bildnachweis unter dem Foto belassen.
+- **Build-Artefakte** (`_site/`, `.quarto/`, `.DS_Store`) niemals committen.
+
+## Stand und offene Punkte
+
+**Stand**
+
+- Live unter nilsroemer.com: Startseite/About, CV, Lectures, Imprint, Privacy. Der letzte Publish entspricht dem aktuellen `main` (Juli 2026).
+- Design-Pass auf Planningio-Brand abgeschlossen, Fonts vollständig self-hosted, Rechtstexte vorhanden.
+- Die Lehre-Seite verweist für den ersten Kurs („Programming: Everyday Decision-Making Algorithms", Kühne Logistics University) auf die externe Kurs-Website `courses.nilsroemer.com`. Kursinhalte liegen also nicht in diesem Repo.
+
+**Offene Punkte**
+
+- `about.qmd` ist ein Platzhalter und nicht verlinkt – entweder entfernen oder mit Inhalt füllen.
+- `nils-roemer_1.jpg` liegt untracked im Arbeitsverzeichnis. Klären, ob es das aktuelle Porträt ersetzen soll; sonst löschen.
+- Ursprünglich geplanter modularer Lehrbereich (Übersicht + Kurs-Unterseiten innerhalb dieser Website): aktuell durch externe Kurs-Websites gelöst. Entscheiden, ob weitere Kurse hier oder extern leben.
+- Optional: Favicon, Open-Graph-Metadaten, 404-Seite.
