@@ -84,7 +84,7 @@ _site/             # Build-Output, gitignored, nie manuell bearbeiten
 
 **Stand**
 
-- Live unter nilsroemer.com: Startseite/About, CV, Lectures, Imprint, Privacy. Letzter Publish am 9. Oktober 2026 (Stand `main` 935b521: neues Porträt, überarbeiteter CV, vereinheitlichter Linkstil).
+- Live unter nilsroemer.com: Startseite/About, CV, Lectures, Imprint, Privacy. Letzter Publish am 9. Oktober 2026 (Stand `main` acfa98a: Lectures im Eintrags-Layout, Klassen `.entries`/`.entry-meta`).
 - Design-Pass auf Planningio-Brand abgeschlossen, Fonts vollständig self-hosted, Rechtstexte vorhanden.
 - Die Lehre-Seite verweist für den ersten Kurs („Programming: Everyday Decision-Making Algorithms", Kühne Logistics University) auf die externe Kurs-Website `courses.nilsroemer.com`. Kursinhalte liegen also nicht in diesem Repo.
 
