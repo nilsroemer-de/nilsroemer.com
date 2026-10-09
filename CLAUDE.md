@@ -48,16 +48,15 @@ quarto publish gh-pages     # Deploy auf GitHub Pages → nilsroemer.com (nur au
 _quarto.yml        # Projektkonfiguration: Navbar, Footer, Theme, Resources (CNAME, fonts/)
 _brand.yml         # Quarto-Brand: Farbpalette und Schriftfamilien (Planningio-Ableitung)
 custom.scss        # @font-face (self-hosted), Design-Tokens als CSS-Variablen, Navbar/Footer/Links
-styles.css         # Layout der Startseite (Foto + Text, Social-Links), blendet den Title-Block aus
+styles.css         # Layout der Startseite (Foto + Text, Social-Links, Umbruch < 992 px), blendet den Title-Block aus
 index.qmd          # Startseite "About": Foto, Kurzvorstellung, LinkedIn/E-Mail
 cv.qmd             # Curriculum Vitae
 lectures.qmd       # Lehre: Kursübersicht mit Links auf externe Kurs-Websites
 imprint.qmd        # Impressum (Rechtstext)
 privacy.qmd        # Datenschutzerklärung (Rechtstext)
-about.qmd          # Platzhalter, nicht in der Navigation verlinkt (siehe offene Punkte)
 CNAME              # Custom Domain für GitHub Pages
 fonts/             # woff2-Dateien: Poppins, Inter, Space Mono (latin + latin-ext)
-nils-roemer.jpg    # Porträtfoto der Startseite (© Xenia Bluhm)
+nils-roemer.jpg    # Porträtfoto der Startseite, 1000 px breit, ohne EXIF (© Xenia Bluhm)
 DESIGN-TOKENS.md   # Referenz: Planningio-Design-System; vom Render ausgeschlossen
 README.md          # Kurzbeschreibung des Repos
 _site/             # Build-Output, gitignored, nie manuell bearbeiten
@@ -76,7 +75,7 @@ _site/             # Build-Output, gitignored, nie manuell bearbeiten
   - Änderungen an Rechtstexten vor dem Einarbeiten als Vorschlag zeigen und von Nils freigeben lassen.
 - **Inhaltsverzeichnis:** Global ist `toc: true`; Seiten ohne TOC setzen `toc: false` im Header (aktuell CV und Lectures).
 - **Zeitangaben in CV/Lehre:** als `[…]{.cv-meta}` auszeichnen (Space Mono, gedämpft).
-- **Bilder:** Das Porträt ist per CSS gegen Rechtsklick/Drag geschützt; Bildnachweis unter dem Foto belassen.
+- **Bilder:** Fotos vor dem Einchecken auf max. 1000 px Breite skalieren, für Web komprimieren und EXIF-Metadaten entfernen. Das Porträt ist per CSS gegen Rechtsklick/Drag geschützt; Bildnachweis unter dem Foto belassen.
 - **Build-Artefakte** (`_site/`, `.quarto/`, `.DS_Store`) niemals committen.
 
 ## Stand und offene Punkte
@@ -89,7 +88,5 @@ _site/             # Build-Output, gitignored, nie manuell bearbeiten
 
 **Offene Punkte**
 
-- `about.qmd` ist ein Platzhalter und nicht verlinkt – entweder entfernen oder mit Inhalt füllen.
-- `nils-roemer_1.jpg` liegt untracked im Arbeitsverzeichnis. Klären, ob es das aktuelle Porträt ersetzen soll; sonst löschen.
 - Ursprünglich geplanter modularer Lehrbereich (Übersicht + Kurs-Unterseiten innerhalb dieser Website): aktuell durch externe Kurs-Websites gelöst. Entscheiden, ob weitere Kurse hier oder extern leben.
 - Optional: Favicon, Open-Graph-Metadaten, 404-Seite.
