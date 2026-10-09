@@ -99,13 +99,14 @@ h2, .h2 { letter-spacing: -.012em; line-height: 1.15; color: var(--ink); }
 h3, .h3 { letter-spacing: -.006em; color: var(--ink); }
 
 /* ================================================================
-   Prose / inline links — primary colour, no underline; the underline
-   appears on hover only. Scoped to main content so navbar, footer,
-   TOC and the icon-only social links keep their own styling.
+   Content links (global, no page-specific overrides) — text colour,
+   no underline; primary colour + underline on hover. Scoped to main
+   content so navbar, footer, TOC and the icon-only social links keep
+   their own styling.
    ================================================================ */
 #quarto-content p a,
 #quarto-content li a {
-  color: var(--primary);
+  color: var(--ink);
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: color .2s ease, border-color .2s ease;
@@ -181,17 +182,6 @@ h3, .h3 { letter-spacing: -.006em; color: var(--ink); }
 }
 .cv li::marker {
   color: var(--fg-3);
-}
-
-/* Links on the CV page: text colour, no underline; primary + underline on hover */
-#quarto-content .cv p a,
-#quarto-content .cv li a {
-  color: var(--ink);
-}
-#quarto-content .cv p a:hover,
-#quarto-content .cv li a:hover {
-  color: var(--primary);
-  border-bottom-color: var(--primary);
 }
 
 /* ================================================================
