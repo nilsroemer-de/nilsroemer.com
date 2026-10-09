@@ -19,12 +19,16 @@
 }
 
 .profile-photo {
-  flex: 0 0 46%;
+  flex: 0 0 42%;
   min-width: 0;
 }
 
+/* Landscape source shown as a portrait crop (4:5), centred on the person */
 .profile-photo img {
   width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: 64% 50%;
   border-radius: 8px;
   display: block;
   pointer-events: none;
@@ -58,12 +62,15 @@
   .profile-photo {
     flex: none;
     width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
   }
 }
 
-/* Prose links on the homepage: no underline, underline only on hover
-   (overrides the site-wide ink/primary-underline rule in custom.scss) */
+/* Prose links on the homepage: primary colour, no underline,
+   underline only on hover (overrides the site-wide rule in custom.scss) */
 #quarto-content .profile-text p a {
+  color: var(--primary);
   border-bottom-color: transparent;
 }
 
