@@ -1,21 +1,12 @@
-/* Fonts, colours and link styling live in custom.scss + _brand.yml.
-   This file holds only the profile-page layout. */
+/* Fonts, colours, link styling and the page header (h1/h2 spacing) live in
+   custom.scss + _brand.yml. This file holds only the profile-page layout. */
 
-/* Remove top padding on main content */
-#quarto-content main {
-  padding-top: 0;
-}
-
-.quarto-title-block {
-  display: none;
-}
-
-/* Profile layout */
+/* Profile layout — no own top margin: the page-header offset on <main>
+   (custom.scss) positions photo and heading like the h1 on other pages. */
 .profile-columns {
   display: flex;
   align-items: center;
   gap: 2.5rem;
-  margin-top: 2rem;
 }
 
 .profile-photo {
@@ -56,7 +47,6 @@
     flex-direction: column;
     align-items: stretch;
     gap: 1.5rem;
-    margin-top: 1rem;
   }
 
   .profile-photo {
@@ -65,14 +55,6 @@
     max-width: 360px;
     margin: 0 auto;
   }
-}
-
-.profile-text h2 {
-  margin-top: 0;
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: var(--ink);
-  line-height: 1.2;
 }
 
 /* Social links as icons */
