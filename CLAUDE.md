@@ -56,7 +56,7 @@ imprint.qmd        # Impressum (Rechtstext)
 privacy.qmd        # Datenschutzerklärung (Rechtstext)
 CNAME              # Custom Domain für GitHub Pages
 fonts/             # woff2-Dateien: Poppins, Inter, Space Mono (latin + latin-ext)
-nils-roemer.jpg    # Porträtfoto der Startseite, 1000 px breit, ohne EXIF (© Xenia Bluhm)
+nils-roemer.jpg    # Porträtfoto der Startseite, 2100 × 1400 px (Querformat, per CSS als 4:5 beschnitten), ohne EXIF (© Xenia Bluhm)
 DESIGN-TOKENS.md   # Referenz: Planningio-Design-System; vom Render ausgeschlossen
 README.md          # Kurzbeschreibung des Repos
 _site/             # Build-Output, gitignored, nie manuell bearbeiten
@@ -77,14 +77,14 @@ _site/             # Build-Output, gitignored, nie manuell bearbeiten
 - **Keine Gedankenstriche als Satzzeichen im sichtbaren Text.** Sätze stattdessen umformulieren (Komma, Punkt, Klammer). Bereichsangaben wie `2018–2022` und Seitenzahlen wie `271–286` bleiben.
 - **Links im Inhalt:** Textfarbe, keine Unterstreichung, bei Hover Primärfarbe mit Unterstreichung. Global in `custom.scss` definiert, keine seitenspezifischen Abweichungen.
 - **CV-Aufbau:** Rolle bzw. Abschluss als `###`, darunter Organisation und Zeitraum als eigene Zeile `[…]{.cv-meta}` (Space Mono, gedämpft), darunter Text oder Unterpunkte. Publikationen und Preise als einzelne Absätze ohne Aufzählungspunkte. Auf der Lehre-Seite wird `.cv-meta` inline verwendet.
-- **Bilder:** Fotos vor dem Einchecken auf max. 1000 px Breite skalieren, für Web komprimieren und EXIF-Metadaten entfernen. Das Porträt ist per CSS gegen Rechtsklick/Drag geschützt; Bildnachweis unter dem Foto belassen.
+- **Bilder:** Fotos vor dem Einchecken für Web komprimieren und EXIF-Metadaten entfernen; Auflösung so wählen, dass sie für Retina reicht (Porträt: 1400 px Höhe). Das Porträt wird per CSS (`object-fit: cover`, 4:5) beschnitten, ist gegen Rechtsklick/Drag geschützt; Bildnachweis unter dem Foto belassen.
 - **Build-Artefakte** (`_site/`, `.quarto/`, `.DS_Store`) niemals committen.
 
 ## Stand und offene Punkte
 
 **Stand**
 
-- Live unter nilsroemer.com: Startseite/About, CV, Lectures, Imprint, Privacy. Der letzte Publish entspricht dem aktuellen `main` (Juli 2026).
+- Live unter nilsroemer.com: Startseite/About, CV, Lectures, Imprint, Privacy. Letzter Publish am 9. Oktober 2026 (Stand `main` 935b521: neues Porträt, überarbeiteter CV, vereinheitlichter Linkstil).
 - Design-Pass auf Planningio-Brand abgeschlossen, Fonts vollständig self-hosted, Rechtstexte vorhanden.
 - Die Lehre-Seite verweist für den ersten Kurs („Programming: Everyday Decision-Making Algorithms", Kühne Logistics University) auf die externe Kurs-Website `courses.nilsroemer.com`. Kursinhalte liegen also nicht in diesem Repo.
 
