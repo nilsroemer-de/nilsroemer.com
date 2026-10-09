@@ -9,7 +9,7 @@ pagetitle: "Nils Roemer"
 </div>
 <div class="profile-text">
 
-## Dr. Nils Roemer
+# Dr. Nils Roemer
 
 I am an entrepreneur, researcher, and lecturer based in Hamburg, Germany.
 

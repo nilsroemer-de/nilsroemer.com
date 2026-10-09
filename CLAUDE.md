@@ -47,9 +47,9 @@ quarto publish gh-pages     # Deploy auf GitHub Pages → nilsroemer.com (nur au
 ```
 _quarto.yml        # Projektkonfiguration: Navbar, Footer, Theme, Resources (CNAME, fonts/)
 _brand.yml         # Quarto-Brand: Farbpalette und Schriftfamilien (Planningio-Ableitung)
-custom.scss        # @font-face (self-hosted), Design-Tokens als CSS-Variablen, Navbar/Footer/Links
-styles.css         # Layout der Startseite (Foto + Text, Social-Links, Umbruch < 992 px), blendet den Title-Block aus
-index.qmd          # Startseite "About": Foto, Kurzvorstellung, LinkedIn/E-Mail
+custom.scss        # @font-face (self-hosted), Design-Tokens als CSS-Variablen, Seitenkopf (h1/h2-Abstände), Eintrags-Layout, Navbar/Footer/Links
+styles.css         # Nur Layout der Startseite (Foto + Text, Social-Links, Umbruch < 992 px)
+index.qmd          # Startseite "About": Foto, Name als `#`-Überschrift, Kurzvorstellung, LinkedIn/E-Mail
 cv.qmd             # Curriculum Vitae; Inhalt in `::: {.entries}` gewrappt (Eintrags-Layout, siehe Konventionen)
 lectures.qmd       # Lehre: Kursübersicht im Eintrags-Layout (`::: {.entries}`), Links auf externe Kurs-Websites
 imprint.qmd        # Impressum (Rechtstext)
@@ -68,7 +68,7 @@ _site/             # Build-Output, gitignored, nie manuell bearbeiten
 
 ## Konventionen
 
-- **`pagetitle` statt `title`:** Im YAML-Header jeder Seite `pagetitle:` verwenden (setzt nur das `<title>`-Tag). Die sichtbare Überschrift steht als `# …` bzw. `## …` im Body. Grund: `styles.css` blendet den Quarto-Title-Block aus; mit `title:` entstünde eine doppelte Überschrift im DOM.
+- **`pagetitle` statt `title`:** Im YAML-Header jeder Seite `pagetitle:` verwenden (setzt nur das `<title>`-Tag). Die sichtbare Überschrift steht als `# …` bzw. `## …` im Body. Grund: `custom.scss` blendet den Quarto-Title-Block aus; mit `title:` entstünde eine doppelte Überschrift im DOM.
 - **Keine Requests an Dritte:** Alle Fonts sind self-hosted (`fonts/`, `@font-face` in `custom.scss`; der Google-Fonts-Import des Cosmo-Themes ist über `$web-font-path: false` abgeschaltet). Keine Analytics, keine Cookies, keine eingebetteten Fremdinhalte (Videos, Karten, CDN-Skripte). Die Datenschutzerklärung sichert genau das zu – jede neue Abhängigkeit muss dagegen geprüft werden.
 - **Rechtstexte (`imprint.qmd`, `privacy.qmd`):**
   - Keine sichtbaren Datumsangaben („Stand: …", „Last updated …") einfügen.
@@ -76,6 +76,7 @@ _site/             # Build-Output, gitignored, nie manuell bearbeiten
 - **Inhaltsverzeichnis:** Global ist `toc: true`; Seiten ohne TOC setzen `toc: false` im Header (aktuell CV und Lectures).
 - **Keine Gedankenstriche als Satzzeichen im sichtbaren Text.** Sätze stattdessen umformulieren (Komma, Punkt, Klammer). Bereichsangaben wie `2018–2022` und Seitenzahlen wie `271–286` bleiben.
 - **Links im Inhalt:** Textfarbe, keine Unterstreichung, bei Hover Primärfarbe mit Unterstreichung. Global in `custom.scss` definiert, keine seitenspezifischen Abweichungen.
+- **Seitenkopf:** Auf allen Seiten gleich, global in `custom.scss` definiert (Block „Page header"). Jede Seite beginnt mit genau einer `#`-Überschrift (auf der Startseite der Name), ohne Linie darunter, optional direkt gefolgt von einem Einleitungsabsatz. Die Abstände sind zentral festgelegt: oberhalb der h1 als `padding-top` auf `main` (`--space-6`), h1 → Inhalt als `margin-bottom` der h1 (`--space-5`), vor jedem Abschnittslabel als `margin-top` der h2 (`--space-7`). Keine seitenspezifischen Abweichungen in `.entries`, `styles.css` oder einzelnen Seiten; die Startseite übernimmt dieselben Maße, nur das Foto-Text-Layout ist dort zusätzlich.
 - **Eintrags-Layout (`.entries`):** Gemeinsamer Stil für alle Inhaltsseiten mit der Struktur Abschnitt → Eintrag → Meta → Text (aktuell CV und Lectures). Seiteninhalt in `::: {.entries}` wrappen. Abschnitte als `##` (werden zu kleinen Uppercase-Labels), Rolle/Abschluss/Kurs als `###`, darunter Organisation und Zeitraum als eigene Zeile `[…]{.entry-meta}` (Space Mono, gedämpft), darunter Text oder Unterpunkte. Publikationen und Preise als einzelne Absätze ohne Aufzählungspunkte. Die Klassen sind bewusst nicht CV-spezifisch benannt; neue Seiten mit dieser Struktur nutzen dieselben Klassen statt eigener Styles.
 - **Bilder:** Fotos vor dem Einchecken für Web komprimieren und EXIF-Metadaten entfernen; Auflösung so wählen, dass sie für Retina reicht (Porträt: 1400 px Höhe). Das Porträt wird per CSS (`object-fit: cover`, 4:5) beschnitten, ist gegen Rechtsklick/Drag geschützt; Bildnachweis unter dem Foto belassen.
 - **Build-Artefakte** (`_site/`, `.quarto/`, `.DS_Store`) niemals committen.

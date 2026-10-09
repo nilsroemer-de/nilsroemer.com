@@ -99,6 +99,29 @@ h2, .h2 { letter-spacing: -.012em; line-height: 1.15; color: var(--ink); }
 h3, .h3 { letter-spacing: -.006em; color: var(--ink); }
 
 /* ================================================================
+   Page header — identical on every page (About, CV, Lectures, legal).
+   Quarto's title block is hidden; the visible h1 lives in the body.
+   Top offset is carried by <main>, so h1 itself has no top margin and
+   the About page's photo/text layout can use the same offset.
+   ================================================================ */
+.quarto-title-block {
+  display: none;
+}
+#quarto-content main {
+  padding-top: var(--space-6);           /* navbar → h1 (or photo) */
+}
+h1, .h1 {
+  margin-top: 0;
+  margin-bottom: var(--space-5);         /* h1 → intro text / first content */
+  border-bottom: none;
+  padding-bottom: 0;
+}
+h2, .h2 {
+  margin-top: var(--space-7);            /* before every section label */
+  margin-bottom: var(--space-4);
+}
+
+/* ================================================================
    Content links (global, no page-specific overrides) — text colour,
    no underline; primary colour + underline on hover. Scoped to main
    content so navbar, footer, TOC and the icon-only social links keep
@@ -130,10 +153,6 @@ h3, .h3 { letter-spacing: -.006em; color: var(--ink); }
 /* ================================================================
    Entry pages (content wrapped in ::: {.entries}): CV, Lectures … — small labels, lots of air
    ================================================================ */
-.entries h1 {
-  margin-bottom: 1rem;
-}
-
 /* Section titles as small uppercase labels (Planningio eyebrow style) */
 .entries h2 {
   font-family: "Poppins", system-ui, sans-serif;
@@ -143,8 +162,6 @@ h3, .h3 { letter-spacing: -.006em; color: var(--ink); }
   text-transform: uppercase;
   color: var(--primary);
   border-bottom: none;
-  margin-top: 4rem;
-  margin-bottom: 1.25rem;
   padding-bottom: 0;
 }
 
