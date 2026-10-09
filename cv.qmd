@@ -3,14 +3,14 @@ pagetitle: "Curriculum Vitae"
 toc: false
 ---
 
-::: {.cv}
+::: {.entries}
 
 # Curriculum Vitae
 
 ## Experience
 
 ### Co-Founder & Managing Director
-[Planningio GmbH, Hamburg · since 2023]{.cv-meta}
+[Planningio GmbH, Hamburg · since 2023]{.entry-meta}
 
 Hamburg-based consulting boutique and software company specializing in mathematical optimization, simulation, and digital twins ([planningio.com](https://planningio.com)).
 
@@ -19,25 +19,25 @@ Hamburg-based consulting boutique and software company specializing in mathemati
 - Clients across industry, logistics, infrastructure, and major events, from automated production planning in the beverage industry to crowd management for millions of pilgrims in Makkah
 
 ### Lecturer
-[Kühne Logistics University, Hamburg · since 2024]{.cv-meta}
+[Kühne Logistics University, Hamburg · since 2024]{.entry-meta}
 
 - English-language course based on the book "Algorithms to Live By", focusing on algorithms and optimization in everyday and business decisions
 - Developed a hands-on Python format introducing students to data-driven decision models
 
 ### Lecturer
-[Universität Hamburg · 2023]{.cv-meta}
+[Universität Hamburg · 2023]{.entry-meta}
 
 - Interdisciplinary course on entrepreneurship in operations and supply chain management
 - Strong involvement of industry partners to give students real-world founding experience
 
 ### Research Associate
-[Universität Hamburg · 2018–2022]{.cv-meta}
+[Universität Hamburg · 2018–2022]{.entry-meta}
 
 - Teaching in production and logistics (B.Sc.) and supply chain management (M.Sc.); supervision of seminar, bachelor's, and master's theses on quantitative methods
 - Research and publications in business analytics
 
 ### Intern, Supply Chain Management
-[Wallenius Wilhelmsen, Bremen · 2016]{.cv-meta}
+[Wallenius Wilhelmsen, Bremen · 2016]{.entry-meta}
 
 - Norwegian-Swedish shipping company specializing in rolling cargo, in particular global vehicle logistics
 - Contributed to implementing a factory-to-dealer approach for BMW to efficiently manage global vehicle supply chains
@@ -45,13 +45,13 @@ Hamburg-based consulting boutique and software company specializing in mathemati
 ## Education
 
 ### Dr. rer. oec. (summa cum laude)
-[Universität Hamburg · 2018–2022]{.cv-meta}
+[Universität Hamburg · 2018–2022]{.entry-meta}
 
 ### M.Sc. Business Administration
-[Universität Hamburg · 2015–2018]{.cv-meta}
+[Universität Hamburg · 2015–2018]{.entry-meta}
 
 ### B.Sc. Business Administration
-[Universität Hamburg · 2012–2015]{.cv-meta}
+[Universität Hamburg · 2012–2015]{.entry-meta}
 
 ## Publications
 

@@ -50,8 +50,8 @@ _brand.yml         # Quarto-Brand: Farbpalette und Schriftfamilien (Planningio-A
 custom.scss        # @font-face (self-hosted), Design-Tokens als CSS-Variablen, Navbar/Footer/Links
 styles.css         # Layout der Startseite (Foto + Text, Social-Links, Umbruch < 992 px), blendet den Title-Block aus
 index.qmd          # Startseite "About": Foto, Kurzvorstellung, LinkedIn/E-Mail
-cv.qmd             # Curriculum Vitae; Inhalt in `::: {.cv}` gewrappt, damit das CV-Styling greift
-lectures.qmd       # Lehre: Kursübersicht mit Links auf externe Kurs-Websites
+cv.qmd             # Curriculum Vitae; Inhalt in `::: {.entries}` gewrappt (Eintrags-Layout, siehe Konventionen)
+lectures.qmd       # Lehre: Kursübersicht im Eintrags-Layout (`::: {.entries}`), Links auf externe Kurs-Websites
 imprint.qmd        # Impressum (Rechtstext)
 privacy.qmd        # Datenschutzerklärung (Rechtstext)
 CNAME              # Custom Domain für GitHub Pages
@@ -76,7 +76,7 @@ _site/             # Build-Output, gitignored, nie manuell bearbeiten
 - **Inhaltsverzeichnis:** Global ist `toc: true`; Seiten ohne TOC setzen `toc: false` im Header (aktuell CV und Lectures).
 - **Keine Gedankenstriche als Satzzeichen im sichtbaren Text.** Sätze stattdessen umformulieren (Komma, Punkt, Klammer). Bereichsangaben wie `2018–2022` und Seitenzahlen wie `271–286` bleiben.
 - **Links im Inhalt:** Textfarbe, keine Unterstreichung, bei Hover Primärfarbe mit Unterstreichung. Global in `custom.scss` definiert, keine seitenspezifischen Abweichungen.
-- **CV-Aufbau:** Rolle bzw. Abschluss als `###`, darunter Organisation und Zeitraum als eigene Zeile `[…]{.cv-meta}` (Space Mono, gedämpft), darunter Text oder Unterpunkte. Publikationen und Preise als einzelne Absätze ohne Aufzählungspunkte. Auf der Lehre-Seite wird `.cv-meta` inline verwendet.
+- **Eintrags-Layout (`.entries`):** Gemeinsamer Stil für alle Inhaltsseiten mit der Struktur Abschnitt → Eintrag → Meta → Text (aktuell CV und Lectures). Seiteninhalt in `::: {.entries}` wrappen. Abschnitte als `##` (werden zu kleinen Uppercase-Labels), Rolle/Abschluss/Kurs als `###`, darunter Organisation und Zeitraum als eigene Zeile `[…]{.entry-meta}` (Space Mono, gedämpft), darunter Text oder Unterpunkte. Publikationen und Preise als einzelne Absätze ohne Aufzählungspunkte. Die Klassen sind bewusst nicht CV-spezifisch benannt; neue Seiten mit dieser Struktur nutzen dieselben Klassen statt eigener Styles.
 - **Bilder:** Fotos vor dem Einchecken für Web komprimieren und EXIF-Metadaten entfernen; Auflösung so wählen, dass sie für Retina reicht (Porträt: 1400 px Höhe). Das Porträt wird per CSS (`object-fit: cover`, 4:5) beschnitten, ist gegen Rechtsklick/Drag geschützt; Bildnachweis unter dem Foto belassen.
 - **Build-Artefakte** (`_site/`, `.quarto/`, `.DS_Store`) niemals committen.
 

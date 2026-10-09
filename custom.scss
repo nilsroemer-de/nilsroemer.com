@@ -118,9 +118,9 @@ h3, .h3 { letter-spacing: -.006em; color: var(--ink); }
 }
 
 /* ================================================================
-   CV / lecture meta — dates & periods in Space Mono (muted)
+   Entry meta — organisation, period, dates in Space Mono (muted)
    ================================================================ */
-.cv-meta {
+.entry-meta {
   font-family: "Space Mono", ui-monospace, Menlo, monospace;
   font-size: .8rem;
   color: var(--fg-3);
@@ -128,14 +128,14 @@ h3, .h3 { letter-spacing: -.006em; color: var(--ink); }
 }
 
 /* ================================================================
-   CV page (content wrapped in ::: {.cv}) — small labels, lots of air
+   Entry pages (content wrapped in ::: {.entries}): CV, Lectures … — small labels, lots of air
    ================================================================ */
-.cv h1 {
+.entries h1 {
   margin-bottom: 1rem;
 }
 
 /* Section titles as small uppercase labels (Planningio eyebrow style) */
-.cv h2 {
+.entries h2 {
   font-family: "Poppins", system-ui, sans-serif;
   font-size: .8rem;
   font-weight: 700;
@@ -148,39 +148,39 @@ h3, .h3 { letter-spacing: -.006em; color: var(--ink); }
   padding-bottom: 0;
 }
 
-/* Role / degree / publication group */
-.cv h3 {
+/* Role / degree / course / publication group */
+.entries h3 {
   font-size: 1.1rem;
   font-weight: 600;
   margin-top: 2.25rem;
   margin-bottom: .35rem;
 }
-.cv h2 + section.level3 > h3 {
+.entries h2 + section.level3 > h3 {
   margin-top: 0;
 }
 
 /* Organisation + period as a label on its own line under the h3 */
-.cv .cv-meta {
+.entries .entry-meta {
   display: block;
   white-space: normal;
   line-height: 1.5;
 }
-.cv p:has(> .cv-meta:only-child) {
+.entries p:has(> .entry-meta:only-child) {
   margin-bottom: .9rem;
 }
 
 /* Running text and bullets */
-.cv p {
+.entries p {
   margin-bottom: .9rem;
 }
-.cv ul {
+.entries ul {
   padding-left: 1.1rem;
   margin-bottom: 0;
 }
-.cv li {
+.entries li {
   margin-bottom: .35rem;
 }
-.cv li::marker {
+.entries li::marker {
   color: var(--fg-3);
 }
 
