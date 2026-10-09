@@ -135,15 +135,15 @@
   {
     "objectID": "lectures.html",
     "href": "lectures.html",
-    "title": "Teaching",
+    "title": "Lectures",
     "section": "",
-    "text": "I teach quantitative and computational methods with a focus on making algorithmic thinking accessible to business students. The courses connect optimization and data-driven decision-making to practical, everyday problems.\n\n\nKühne Logistics University · ongoing\nAn English-language course based on the book Algorithms to Live By. It introduces business students to algorithmic decision-making, from optimal stopping and scheduling to caching and randomness, alongside a hands-on introduction to Python. No prior programming experience is required.\nCourse website →"
+    "text": "I teach quantitative and computational methods with a focus on making algorithmic thinking accessible to business students. The courses connect optimization and data-driven decision-making to practical, everyday problems.\n\n\n\n\nKühne Logistics University, Hamburg · since 2024\nAn English-language course based on the book Algorithms to Live By. It introduces business students to algorithmic decision-making, from optimal stopping and scheduling to caching and randomness, alongside a hands-on introduction to Python. No prior programming experience is required.\nCourse website →"
   },
   {
-    "objectID": "lectures.html#programming-everyday-decision-making-algorithms",
-    "href": "lectures.html#programming-everyday-decision-making-algorithms",
-    "title": "Teaching",
+    "objectID": "lectures.html#courses",
+    "href": "lectures.html#courses",
+    "title": "Lectures",
     "section": "",
-    "text": "Kühne Logistics University · ongoing\nAn English-language course based on the book Algorithms to Live By. It introduces business students to algorithmic decision-making, from optimal stopping and scheduling to caching and randomness, alongside a hands-on introduction to Python. No prior programming experience is required.\nCourse website →"
+    "text": "Kühne Logistics University, Hamburg · since 2024\nAn English-language course based on the book Algorithms to Live By. It introduces business students to algorithmic decision-making, from optimal stopping and scheduling to caching and randomness, alongside a hands-on introduction to Python. No prior programming experience is required.\nCourse website →"
   }
 ]
