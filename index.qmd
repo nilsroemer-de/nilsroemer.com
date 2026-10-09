@@ -13,7 +13,7 @@ pagetitle: "Nils Roemer"
 
 I am an entrepreneur, researcher, and lecturer based in Hamburg, Germany.
 
-I hold a degree in Business Administration with a focus on Operations and Supply Chain Management (2018) and a PhD in Operations Research and Mathematical Optimization (2022). Since 2023, I am Co-Founder and Managing Director of [Planningio GmbH](https://planningio.com), a Hamburg-based software and consulting company specializing in mathematical optimization.
+I hold a Master's degree in Business Administration with a focus on Operations and Supply Chain Management and a PhD in Operations Research and Mathematical Optimization. Since 2023, I have been Co-Founder and Managing Director of [Planningio GmbH](https://planningio.com), a Hamburg-based software and consulting company specializing in mathematical optimization.
 
 Our projects span automated production planning for the beverage industry, crowd management, warehouse simulation, and industrial digitalization.
 
