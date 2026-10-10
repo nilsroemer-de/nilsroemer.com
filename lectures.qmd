@@ -16,7 +16,7 @@ optimization and data-driven decision-making to practical, everyday problems.
 ### Programming: Everyday Decision-Making Algorithms
 [Kühne Logistics University, Hamburg · since 2024]{.entry-meta}
 
-An English-language course based on the book *Algorithms to Live By*. It
+An English-language course inspired by the book *Algorithms to Live By*. It
 introduces business students to algorithmic decision-making, from optimal
 stopping and scheduling to caching and randomness, alongside a hands-on
 introduction to Python. No prior programming experience is required.

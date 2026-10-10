@@ -21,7 +21,7 @@ Hamburg-based consulting boutique and software company specializing in mathemati
 ### Lecturer
 [Kühne Logistics University, Hamburg · since 2024]{.entry-meta}
 
-- English-language course based on the book "Algorithms to Live By", focusing on algorithms and optimization in everyday and business decisions
+- English-language course inspired by the book "Algorithms to Live By", focusing on algorithms and optimization in everyday and business decisions
 - Developed a hands-on Python format introducing students to data-driven decision models
 
 ### Lecturer
